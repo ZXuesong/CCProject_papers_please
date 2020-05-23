@@ -271,7 +271,12 @@ public class NPCBase {
 					//friendly = false; plead = false;
 				}
 			}else {
-				System.out.println(this.name+": "+CorpusLoader.before_check_refuse.get(rand.nextInt(CorpusLoader.before_check_refuse.size())));
+				int rng__ = rand.nextInt(100);
+				if(rng__>(50+(f/2))) {
+					System.out.println(this.name+": "+CorpusLoader.before_check_pass.get(rand.nextInt(CorpusLoader.before_check_pass.size())));
+				}else {
+					System.out.println(this.name+": "+CorpusLoader.before_check_refuse.get(rand.nextInt(CorpusLoader.before_check_refuse.size())));
+				}	
 				this.plead = true;
 				//friendly = true; plead = true;
 			}

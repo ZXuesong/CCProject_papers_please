@@ -75,7 +75,7 @@ public class Lanuch {
 		}
 		
 		
-		int t =180000;
+		int t =300000;
 		TestTimer testTimer = new TestTimer();
 		Timer tme =new Timer(t,testTimer);
 		tme.setRepeats(false);
